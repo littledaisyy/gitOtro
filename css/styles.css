@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(80, 80, 80)
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+}
+
+.subcontenedor1 {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    /* grid-gap: 20px; */
+    grid-auto-rows: minmax(50px, auto);
+    background-color: pink;
+}
+
+.caja0 {
+    grid-column: 1;
+    grid-row: 10; 
+}
+
+.cajaRoja {
+    grid-column: 2 / 8;
+    grid-row: 2 / 9;
+    background-color: red;
+}
+
+.cajaTexto {
+    grid-column: 11 / 16;
+    grid-row: 2 / 9;
+    background-color: aqua;
+}
